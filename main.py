@@ -17,4 +17,8 @@ class Torneo:
         self.tipo = tipo
         self.equipos = []
 
+    def registrar_equipo(self, equipo):
+        self.equipos.append(equipo)
+
+
 
