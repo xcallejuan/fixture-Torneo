@@ -25,5 +25,8 @@ class Torneo:
         for equipo in self.equipos:
             print("-", equipo)
 
+if __name__ == "__main__":
+    torneo = Torneo("Copa Universitaria", "Eliminación Directa")
+
 
 
