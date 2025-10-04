@@ -20,5 +20,10 @@ class Torneo:
     def registrar_equipo(self, equipo):
         self.equipos.append(equipo)
 
+    def mostrar_equipos(self):
+        print(f"\nEquipos inscritos en el torneo '{self.nombre}':")
+        for equipo in self.equipos:
+            print("-", equipo)
+
 
 
