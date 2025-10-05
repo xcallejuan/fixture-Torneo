@@ -10,6 +10,12 @@ class Jugador:
 
     def __str__(self):
         return f"{self.nombre} ({self.posicion}, {self.edad} años) - Goles: {self.goles}"
+class Equipo:
+    def __init__(self, nombre, ciudad):
+        self.nombre = nombre
+        self.ciudad = ciudad
+        self.jugadores = []
+        self.puntos = 0
 
 class Torneo:
     def __init__(self, nombre, tipo):
@@ -32,6 +38,8 @@ if __name__ == "__main__":
     equipo2 = Equipo("Leones", "Bogotá")
     equipo1.agregar_jugador(Jugador("Juan Pérez", 20, "Delantero"))
     equipo1.agregar_jugador(Jugador("Carlos López", 22, "Portero"))
+
+
 
 
 
