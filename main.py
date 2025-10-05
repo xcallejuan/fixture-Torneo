@@ -28,5 +28,9 @@ class Torneo:
 if __name__ == "__main__":
     torneo = Torneo("Copa Universitaria", "Eliminación Directa")
 
+    equipo1 = Equipo("Tigres", "Medellín")
+    equipo2 = Equipo("Leones", "Bogotá")
+
+
 
 
