@@ -17,6 +17,12 @@ class Equipo:
         self.jugadores = []
         self.puntos = 0
 
+    def agregar_jugador(self, jugador):
+            self.jugadores.append(jugador)
+
+    def __str__(self):
+            return f"Equipo {self.nombre} de {self.ciudad} - Jugadores: {len(self.jugadores)}"
+
 class Torneo:
     def __init__(self, nombre, tipo):
         self.nombre = nombre
@@ -32,12 +38,17 @@ class Torneo:
             print("-", equipo)
 
 if __name__ == "__main__":
-    torneo = Torneo("Copa Universitaria", "Eliminación Directa")
+    torneo: Torneo = Torneo("Copa Universitaria", "Eliminación Directa")
 
     equipo1 = Equipo("Tigres", "Medellín")
     equipo2 = Equipo("Leones", "Bogotá")
     equipo1.agregar_jugador(Jugador("Juan Pérez", 20, "Delantero"))
     equipo1.agregar_jugador(Jugador("Carlos López", 22, "Portero"))
+
+    torneo.registrar_equipo(equipo1)
+    torneo.registrar_equipo(equipo2)
+
+    torneo.mostrar_equipos()
 
 
 
