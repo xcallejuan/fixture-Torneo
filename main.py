@@ -30,6 +30,8 @@ if __name__ == "__main__":
 
     equipo1 = Equipo("Tigres", "Medellín")
     equipo2 = Equipo("Leones", "Bogotá")
+    equipo1.agregar_jugador(Jugador("Juan Pérez", 20, "Delantero"))
+    equipo1.agregar_jugador(Jugador("Carlos López", 22, "Portero"))
 
 
 
